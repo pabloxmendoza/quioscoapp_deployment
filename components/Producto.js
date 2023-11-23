@@ -2,7 +2,7 @@ import Image from 'next/image'
 import  { formatearDinero } from '../helpers'
 import useQuiosco from '../hooks/useQuiosco'
 
-const producto = ({producto}) => {
+const Producto = ({producto}) => {
   const { handleSetProducto, handleChangeModal } = useQuiosco()
   const { nombre, imagen, precio } = producto
 
@@ -34,4 +34,4 @@ const producto = ({producto}) => {
   )
 }
 
-export default producto
+export default Producto
