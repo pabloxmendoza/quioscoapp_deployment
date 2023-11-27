@@ -31,10 +31,27 @@ export default function Orden({orden}) {
                 alt={`Imagen Platillo ${platillo.nombre}`}
               />
             </div>
-            <div className='p-5 space-y-2'>
+            <div className='w-full p-5 space-y-2'>
               <h4 className='text-xl font-bold text-amber-500'>{platillo.nombre}</h4>
               <p className='text-lg font-bold'>Cantidad: {platillo.cantidad} </p>
+              <label
+                  htmlFor="comentario"
+                  className="block uppercase text-slate-800 font-bold text-xl"
+                >Comentario
+              </label>
+              <textarea
+                id="comentario"
+                type="text"
+                className="bg-neutral-200 w-full  mt-3 p-2 rpunded-md"
+                rows="3"
+                value={platillo.comentario}
+                enabled="false"
+              >
+              </textarea>
             </div>
+          
+           
+            
           </div>
         ))}
       </div>

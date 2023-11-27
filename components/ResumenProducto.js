@@ -19,6 +19,22 @@ const ResumenProducto = ({producto}) => {
       <div className="md:w-4/6">
         <p className="text-3xl font-bold">{producto.nombre}</p>
         <p className="text-xl font-bold mt-2">Cantidad: {producto.cantidad}</p>
+        <div className='mt-5 mb-3'>
+          <label
+              htmlFor="comentario"
+              className="block uppercase text-slate-800 font-bold text-xl"
+            >Comentario
+            </label>
+            <textarea
+              id="comentario"
+              type="text"
+              className="bg-gray-200 w-full  mt-3 p-2 rpunded-md"
+              rows="3"
+              value={producto.comentario}
+              enabled="false"
+            >
+            </textarea>
+        </div>
         <p className="text-xl font-bold text-amber-500 mt-2">Precio: {formatearDinero(producto.precio)}</p>
 
         <p className="text-sm text-gray-700 mt-2">Subtotal: {formatearDinero(producto.precio * producto.cantidad)}</p>

@@ -353,6 +353,102 @@ const productos = [
       precio: 69.9,
       imagen: "pizzas_11",
       categoriaId: 3
+    },
+    {
+      nombre: "Modelo Especial",
+      precio: 30.0,
+      imagen: "cerveza_01",
+      categoriaId: 7
+    },
+    {
+      nombre: "Negra Modelo",
+      precio: 30.0,
+      imagen: "cerveza_02",
+      categoriaId: 7
+    },
+    {
+      nombre: "Pacifico Clara",
+      precio: 30.0,
+      imagen: "cerveza_03",
+      categoriaId: 7
+    },
+    {
+      nombre: "Budweiser",
+      precio: 30.0,
+      imagen: "cerveza_04",
+      categoriaId: 7
+    },
+    {
+      nombre: "Heiniken",
+      precio: 30.0,
+      imagen: "cerveza_05",
+      categoriaId: 7
+    },
+    {
+      nombre: "XX lager",
+      precio: 30.0,
+      imagen: "cerveza_06",
+      categoriaId: 7
+    },
+    {
+      nombre: "Corona",
+      precio: 30.0,
+      imagen: "cerveza_07",
+      categoriaId: 7
+    },
+    {
+      nombre: "Victoria",
+      precio: 30.0,
+      imagen: "cerveza_08",
+      categoriaId: 7
+    },
+    {
+      nombre: "Coca Cola",
+      precio: 25.0,
+      imagen: "soda_01",
+      categoriaId: 8
+    },
+    {
+      nombre: "7 Up",
+      precio: 25.0,
+      imagen: "soda_02",
+      categoriaId: 8
+    },
+    {
+      nombre: "Fanta Naranja",
+      precio: 25.0,
+      imagen: "soda_03",
+      categoriaId: 8
+    },
+    {
+      nombre: "Sprite",
+      precio: 25.0,
+      imagen: "soda_04",
+      categoriaId: 8
+    },
+    {
+      nombre: "Pepsi",
+      precio: 25.0,
+      imagen: "soda_05",
+      categoriaId: 8
+    },
+    {
+      nombre: "Coca Cola Light",
+      precio: 25.0,
+      imagen: "soda_06",
+      categoriaId: 8
+    },
+    {
+      nombre: "Fanta Fresa",
+      precio: 25.0,
+      imagen: "soda_07",
+      categoriaId: 8
+    },
+    {
+      nombre: "Coca Cola Sin Azucar",
+      precio: 25.0,
+      imagen: "soda_08",
+      categoriaId: 8
     }
 ]
 

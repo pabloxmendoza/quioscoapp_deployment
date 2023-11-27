@@ -6,6 +6,7 @@ import { formatearDinero } from '../helpers'
 const ModalProducto = () => {
   const { producto, handleChangeModal, handleAgregarPedido, pedido } = useQuiosco()
   const [cantidad, setCantidad] = useState(1)
+  const [comentario, setComentario] = useState('')
   const [edicion, setEdicion] = useState(false)
 
   useEffect(() => {
@@ -13,6 +14,7 @@ const ModalProducto = () => {
       const productoEdicion = pedido.find((pedidoState) => pedidoState.id === producto.id)
       setEdicion(true)
       setCantidad(productoEdicion.cantidad)
+      setComentario(productoEdicion.comentario)
     } 
   }, [producto, pedido])
 
@@ -36,11 +38,11 @@ const ModalProducto = () => {
             </svg>
           </button>
         </div>
-        <h1 className='text-3xl font-bold mt-5'>{producto.nombre}</h1>
+        <h1 className='text-3xl font-bold'>{producto.nombre}</h1>
         <p className='mt-5 font-black text-5xl text-amber-500'>
           {formatearDinero(producto.precio)}
         </p>
-        <div className='flex gap-4 mt-5'>
+        <div className='flex gap-5 mt-5'>
           <button
             type="button"
             onClick={() =>{
@@ -66,10 +68,26 @@ const ModalProducto = () => {
 
           </button>
         </div>
+        <div className='mt-5 mb-3'>
+          <label
+              htmlFor="comentario"
+              className="block uppercase text-slate-800 font-bold text-xl"
+            >Comentario
+            </label>
+            <textarea
+              id="comentario"
+              type="text"
+              className="bg-gray-200 w-full  mt-3 p-2 rpunded-md"
+              rows="3"
+              value={comentario}
+              onChange={ e => setComentario(e.target.value)}
+            >
+            </textarea>
+        </div>
         <button
           type="button"
           className="bg-indigo-600 hover:bg-indigo-800 px-5 py-2 mt-5 text-white font-bold uppercase rounded"
-          onClick={() => handleAgregarPedido({...producto, cantidad})}
+          onClick={() => handleAgregarPedido({...producto, cantidad, comentario})}
         >{edicion ? "Guardar cambios" : "Añadir al Pedido"}</button>
       </div>
     </div>

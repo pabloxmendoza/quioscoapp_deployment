@@ -23,6 +23,14 @@ const categorias = [
     {
       icono: "galletas",
       nombre: "Galletas"
+    },
+    {
+      icono: "cerveza",
+      nombre: "Cerveza"
+    },
+    {
+      icono: "soda",
+      nombre: "Soda"
     }
 ]
 
